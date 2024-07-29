@@ -10,7 +10,7 @@ for i in range(1,n+1):
     for j in range(i,n+1):
         sum_val += num[j]
 
-        if sum_val >= s:
+        if sum_val >= s or (j-i+1) > ans:
             break
         
     if sum_val >=s:
