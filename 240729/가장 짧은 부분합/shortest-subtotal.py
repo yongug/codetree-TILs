@@ -12,7 +12,7 @@ for i in range(0,n):
         if sum_val >= s:
             break
         
-        ans = min(ans,j-i+1)
+    ans = min(ans,j-i+2)
 
 if ans == 100001:
     print(-1)
