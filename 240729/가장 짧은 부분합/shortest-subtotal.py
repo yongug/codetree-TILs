@@ -6,12 +6,15 @@ ans = 100001
 
 for i in range(0,n):
     sum_val = 0
-    for j in range(i,n):
+    for j in range(i+1,n):
         sum_val += num[j]
 
         if sum_val >= s:
             break
         
-        ans = min(ans,j-i+2)
+        ans = min(ans,j-i+1)
 
-print(ans)
+if ans == 100001:
+    print(-1)
+else:
+    print(ans)
