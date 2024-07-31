@@ -1,7 +1,7 @@
 def is_magic_number(n):
     flag = 0
     
-    while(n%10 >0):
+    while(n/10 >0):
         k = n%10
         
         if k == 3 or k == 6 or k == 9:
